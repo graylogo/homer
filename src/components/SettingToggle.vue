@@ -21,9 +21,9 @@ export default {
   },
   created: function () {
     this.secondaryIcon = this.iconAlt || this.icon;
-
     if (this.name in localStorage) {
-      this.value = JSON.parse(localStorage[this.name]);
+      //   this.value = JSON.parse(localStorage[this.name]);
+      this.value = false;
     }
 
     this.$emit("updated", this.value);

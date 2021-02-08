@@ -28,9 +28,10 @@
         :links="config.links"
         @navbar-toggle="showMenu = !showMenu"
       >
-        <DarkMode @updated="isDark = $event" />
+        <DarkMode @updated="isDark = $event" v-if="false" />
 
         <SettingToggle
+          v-if="false"
           @updated="vlayout = $event"
           name="vlayout"
           icon="fa-list"
@@ -143,7 +144,7 @@ export default {
       services: null,
       offline: false,
       filter: "",
-      vlayout: true,
+      vlayout: false,
       isDark: null,
       showMenu: false,
     };
