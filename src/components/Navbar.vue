@@ -3,6 +3,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
+          <slot v-if="SmallScreen"></slot>
           <a
             role="button"
             aria-label="menu"
@@ -34,7 +35,7 @@
             </a>
           </div>
           <div class="navbar-end">
-            <slot></slot>
+            <slot v-if="!SmallScreen"></slot>
           </div>
         </div>
       </div>
@@ -55,6 +56,9 @@ export default {
   computed: {
     showMenu: function () {
       return this.open && this.isSmallScreen();
+    },
+    SmallScreen: function () {
+      return window.matchMedia("screen and (max-width: 1023px)").matches;
     },
   },
   methods: {

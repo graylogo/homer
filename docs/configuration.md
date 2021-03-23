@@ -139,6 +139,7 @@ Homer uses [bulma CSS](https://bulma.io/), which provides a [modifiers syntax](h
 - `is-success` (green)
 - `is-warning` (yellow)
 - `is-danger` (red)
+- `is-dark` (gray)
 
 You can read the [bulma modifiers page](https://bulma.io/documentation/modifiers/syntax/) for other options regarding size, style, or state.
 
