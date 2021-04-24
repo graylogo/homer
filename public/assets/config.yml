@@ -4,7 +4,7 @@
 
 title: "brew.wang"
 subtitle: "Gray"
-logo: "favicon.png"
+logo: "assets/icons/favicon.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
 
 header: true
@@ -67,7 +67,7 @@ services:
     icon: "fas fa-code"
     items:
       - name: "我的博客"
-        logo: "/favicon.png"
+        logo: "assets/icons/favicon.png"
         subtitle: "点击跳转博客主页"
         tag: "blog"
         url: "http://grayblog.cn/"
